@@ -1,0 +1,14 @@
+{
+    "template": "<div class=\"example-rollershutter\" oc-lazy-load=\"['/habpanel-resources/example-widget/rollershutter.css']\">\n  <div class=\"rollershutter-header\">{{ngModel.name}}</div>\n\n  <button class=\"btn btn-default up-button\" ng-click=\"sendCmd(config.item, 100)\">\n    <img src=\"/icon/fts_shutter_up?iconset=knx-rollershutter&format=svg\" class=\"invert\"></img>\n  </button>\n\n  <div class=\"middle-buttons\">\n    <button class=\"btn btn-primary button-left\" ng-click=\"sendCmd(config.item, 30)\">\n      <img src=\"/icon/fts_shutter_30?iconset=knx-rollershutter&format=svg\"></img>\n    </button>\n    <button class=\"btn btn-primary button-middle\" ng-click=\"sendCmd(config.item, 50)\">\n      <img src=\"/icon/fts_shutter_50?iconset=knx-rollershutter&format=svg\"></img>\n    </button>\n    <button class=\"btn btn-primary button-right\" ng-click=\"sendCmd(config.item, 70)\">\n      <img src=\"/icon/fts_shutter_70?iconset=knx-rollershutter&format=svg\"></img>\n    </button>\n  </div>\n\n  <button class=\"btn btn-default down-button\" ng-click=\"sendCmd(config.item, 0)\">\n    <img src=\"/icon/fts_shutter_down?iconset=knx-rollershutter&format=svg\" class=\"invert\"></img>\n  </button>\n</div>\n",
+    "name": "Example rollershutter",
+    "author": "Yannick S",
+    "description": "This widget commands a rollershutter, including up, down buttons and buttons to position it to 30%, 50% or 70%",
+    "settings": [
+        {
+            "type": "item",
+            "id": "item",
+            "label": "Rollershutter item",
+            "description": "The rollershutter item the widget will control, it should be a number from 0 (closed) to 100 (open)"
+        }
+    ]
+}
