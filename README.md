@@ -10,4 +10,6 @@ This bundle showcases a few things that can be achieved with this approach:
 - It registers a few icons as an ESH iconset, those are used by the widget's template;
 - It maps a CSS file as a static resource in the server so the widget can load it with the `oc-lazy-load` directive, using classes and avoiding inline styles. Note that AngularJS controllers, directives or even external Javascript libraries could be loaded that way!
 
+### Licensing ###
 This example project uses icons from the [knx-user-forum.de icon set](https://github.com/OpenAutomationProject/knx-uf-iconset) and is therefore distributed under the same license (CC BY-SA 3.0, see LICENSE) as required.
+*However, if the files in the `icons` folder are not part of a derived work, in source or binary form, the rest of the source code may be relicensed under the terms of the EPL license version 1.0, the MIT license, or any license compatible with the GPL.*
